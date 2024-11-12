@@ -95,8 +95,10 @@ note: don't any other process on this port.
 
 ### recommend()
 
-```text
-    Recommend movies based on a given movie title.This function takes a movie title from a JSON request, finds the movie in the dataset,and returns a list of recommended movies based on similarity.
+```md
+    Recommend movies based on a given movie title.
+    This function takes a movie title from a JSON request,
+    finds the movie in the dataset,and returns a list of recommended movies based on similarity.
 ```
 
 ## Folder Structure
@@ -139,6 +141,3 @@ pyvenv.cfg: Configuration file for the virtual environment.
 
 #### Gourab Sarkar (Api Integration & Documentation)
 
-```
-
-```
