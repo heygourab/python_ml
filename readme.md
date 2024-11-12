@@ -11,7 +11,7 @@
 ## Pip module install
 
 ```bash
-pip install flask flask-cors pandas
+pip install flask flask-cors pandas scikit-learn
 ```
 
 ## Run command
