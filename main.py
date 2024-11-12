@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
@@ -6,6 +7,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 # Creating an app instance
 app = Flask(__name__)
 
+CORS(app)
 # Loading and cleaning the data
 movies = pd.read_csv('./data/data.csv')
 movies = movies[['id', 'title', 'overview', 'genre']]

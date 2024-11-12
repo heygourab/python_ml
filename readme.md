@@ -3,9 +3,16 @@
 ## Python packages used in this project (Imports)
 
 1. Flask -- for creating web api
-2. Pandas -- data processing
-3. CountVectorized -- covert collection of text documents to matrix of token count.
-4. cosine_similarity -- compute the cosine similarity between two vectors. (text analysis).
+2. flask_cors -- CORS
+3. Pandas -- data processing
+4. CountVectorized -- covert collection of text documents to matrix of token count.
+5. cosine_similarity -- compute the cosine similarity between two vectors. (text analysis).
+
+## Pip module install
+
+```bash
+pip install flask flask-cors pandas
+```
 
 ## Run command
 
@@ -14,8 +21,16 @@ python main.py
 ```
 
 ## If you want to run in isolate env.
-``` bash 
-python3.9 -m venv venv
+
+```bash
+python3 -m venv venv
+```
+
+## Run venv env.
+
+```bash
+python3 -m venv path/to/venv
+    source path/to/venv/bin/activate
 ```
 
 ## Default API port-
@@ -123,3 +138,7 @@ pyvenv.cfg: Configuration file for the virtual environment.
 #### Swata Shaw (Data Processing & building recommendation function)
 
 #### Gourab Sarkar (Api Integration & Documentation)
+
+```
+
+```
