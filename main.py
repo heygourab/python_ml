@@ -30,12 +30,12 @@ similarity = cosine_similarity(vector)
 def recommend():
     movie_title = request.json.get('title')
     if not movie_title:
-        return jsonify({'error': 'Title is required'}), 400
+        return jsonify({'error': 'Title is required'}), 
 
     # Finding the index in a case-insensitive way
     matching_movies = movies[movies['title'].str.lower() == movie_title.lower()]
     if matching_movies.empty:
-        return jsonify({'error': 'Movie not found'}), 404
+        return jsonify({'error': 'Movie not found'}), 
 
     index = matching_movies.index[0]
     distances = sorted(list(enumerate(similarity[index])), reverse=True, key=lambda x: x[1])
